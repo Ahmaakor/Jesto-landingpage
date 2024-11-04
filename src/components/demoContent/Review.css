@@ -1,0 +1,141 @@
+:root {
+    --pink: #ff2e63;
+    --pinklight: #ff9d9d;
+    --pinklighter: #ffc2c2;
+    --blue: #010a43;
+}
+
+.carousel {
+    max-width: 1000px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid var(--pink);
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ensure the inner container takes full width */
+}
+.review {
+    background: url('../../Jesto Images/Shockwave2015.jpeg') no-repeat center center; 
+    background-size: cover;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 0 0 300px; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+
+.review p {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.review span {
+    color: var(--pink);
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.nav-button {
+    position: absolute;
+    top: 100px;
+    transform: translateY(-50%);
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.testimonial-button {
+    position: absolute;
+    top: 5px; 
+    right: 6px; 
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    padding: 0 10px 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    border-radius: 0 10px;
+    cursor: pointer;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+}
+
+#my-testimony {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#my-testimony h3 {
+    margin: 0 0 10px;
+}
+
+#my-testimony input, #my-testimony textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid var(--pink);
+    border-radius: 5px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .carousel {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        margin: 20px auto;
+        border-width: 1px; 
+        width: 90%;
+    }
+
+    .nav-button {
+        padding: 8px; 
+    }
+
+    .testimonial-button {
+        top: 10px; 
+        right: 5px;
+        width: 40px; 
+        height: 40px; 
+        font-size: 1.5rem; 
+    }
+
+    #my-testimony {
+        margin-top: 10px; 
+        padding: 15px; 
+    }
+}
+

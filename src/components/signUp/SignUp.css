@@ -1,0 +1,135 @@
+.signup {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: fit-content;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 1024px) {
+    .image-upload-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .image-upload-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .form-detail {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.birthday-inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+button {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button.active {
+    background-color: #ff5a5f;
+    color: white;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#submitBtn {
+    display: block;
+    padding: 10px;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.image-upload-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.image-upload-box {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.image-upload-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.image-upload-box input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.image-upload-box::after {
+    content: '+';
+    font-size: 24px;
+    color: #ff5a5f;
+}
+.image-upload-box.has-image::after {
+    content: none;
+}
+
+
+
+
