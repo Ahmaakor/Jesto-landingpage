@@ -1,18 +1,16 @@
-import Review from './Review';
+import { Link } from 'react-router-dom';    
 
 function Epic() {
     return (
+        <>
         <div className="epic">
             <div className="new-content">
-                <h1>Start something epic</h1>
+                <h1>Start Something Epic</h1>
                 <p>Connect with jesters who share your sense of humor. Join JestoBook today and discover your perfect comedic match.</p>
-                <a href="#" className="button button-primary">Create Account</a>
+                <Link to="/auth" className="button button-primary">Create Account</Link>
             </div>
-
-
-            
-            <Review />
         </div>
+        </>
     );
 }
 

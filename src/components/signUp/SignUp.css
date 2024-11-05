@@ -18,9 +18,9 @@ h1 {
 }
 
 @media (max-width: 1024px) {
-    .image-upload-container {
+    .form-group .image-upload-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 }
@@ -30,14 +30,24 @@ h1 {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .image-upload-container {
-        grid-template-columns: repeat(3, 1fr);
+    .form-group .image-upload-container {
+        grid-template-columns: repeat(4, 1fr);
         gap: 10px;
     }
     .form-detail {
         display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .form-group .image-upload-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 350px) {
+    .form-group .image-upload-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

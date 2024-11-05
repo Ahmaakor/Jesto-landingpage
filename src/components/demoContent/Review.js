@@ -160,8 +160,8 @@
 
 
 import React, { useState, useEffect } from 'react';
-import './Review.css'; // Import the CSS for styling
-import backgroundImage from '../../Jesto Images/Shockwave2015.jpeg'; // Adjust the path if necessary
+import './Review.css'; 
+// import backgroundImage from '../../Jesto Images/Shockwave2015.jpeg';
 
 const Review = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -237,44 +237,51 @@ const Review = () => {
     };
 
     return (
-        <section className="carousel" aria-label="Reviews Carousel">
-            <button className="nav-button prev" onClick={() => moveSlide(-1)} aria-label="Previous Review">&#10094;</button>
-            <button className="nav-button next" onClick={() => moveSlide(1)} aria-label="Next Review">&#10095;</button>
-            <button className="testimonial-button" onClick={() => setShowTestimonialForm((prev) => !prev)} aria-label="Add Testimonial">+</button>
+        <section className="review-section">
+            <h1>
+                Success Stories from our Users
+            </h1>
+            <section className="carousel" aria-label="Reviews Carousel">
+                <button className="nav-button prev" onClick={() => moveSlide(-1)} aria-label="Previous Review">&#10094;</button>
+                <button className="nav-button next" onClick={() => moveSlide(1)} aria-label="Next Review">&#10095;</button>
+                <button className="testimonial-button" onClick={() => setShowTestimonialForm((prev) => !prev)} aria-label="Add Testimonial">
+                    <span>+</span>
+                </button>
 
-            <div className="carousel-inner" style={{ transform: `translateX(-${currentIndex * 320}px)` }}>
-                {testimonials.map((testimonial, index) => (
-                    <div className="review" key={index}>
-                        <p>{testimonial.text}</p>
-                        <span>- {testimonial.name}</span>
-                    </div>
-                ))}
-            </div>
-
-            {showTestimonialForm && (
-                <div id="my-testimony">
-                    <form onSubmit={handleSubmitTestimonial}>
-                        <h3>Add Your Testimonial</h3>
-                        <input
-                            type="text"
-                            name="name"
-                            value={newTestimonial.name}
-                            onChange={handleTestimonialChange}
-                            placeholder="Your Name"
-                            required
-                        />
-                        <textarea
-                            name="text"
-                            value={newTestimonial.text}
-                            onChange={handleTestimonialChange}
-                            rows="4"
-                            placeholder="Your Testimonial"
-                            required
-                        />
-                        <button type="submit">Submit</button>
-                    </form>
+                <div className="carousel-inner" style={{ transform: `translateX(-${currentIndex * 320}px)` }}>
+                    {testimonials.map((testimonial, index) => (
+                        <div className="review" key={index}>
+                            <p>{testimonial.text}</p>
+                            <span>- {testimonial.name}</span>
+                        </div>
+                    ))}
                 </div>
-            )}
+
+                {showTestimonialForm && (
+                    <div id="my-testimony">
+                        <form onSubmit={handleSubmitTestimonial}>
+                            <h3>Add Your Testimonial</h3>
+                            <input
+                                type="text"
+                                name="name"
+                                value={newTestimonial.name}
+                                onChange={handleTestimonialChange}
+                                placeholder="Your Name"
+                                required
+                            />
+                            <textarea
+                                name="text"
+                                value={newTestimonial.text}
+                                onChange={handleTestimonialChange}
+                                rows="4"
+                                placeholder="Your Testimonial"
+                                required
+                            />
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                )}
+            </section>
         </section>
     );
 };

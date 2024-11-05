@@ -1,16 +1,23 @@
 function Work() {
   return (
     <section class="work">
-        <h2>How JestoBook Works</h2>
-        <div class="work-cards">
-            <div class="card">
-                <h3>Create a Profile</h3>
-                <p>Sign up and create a unique profile to start matching with others.</p>
-            </div>
-            <div class="card">
-                <h3>Swipe Right</h3>
-                <p>Swipe through profiles to find people you’re interested in connecting with.</p>
-            </div>
+        <div class="row">
+          <div class="block-explain ton-of-singles">
+            <div class="explain-head">TONS OF SINGLES</div>
+            <div class="explain-sub-head">639,302 new members per month</div>
+          </div>
+          <div class="block-explain it-free">
+            <div class="explain-head">IT'S EASIER </div>
+            <div class="explain-sub-head">Message anyone, anytime, by ease.</div>
+          </div>
+          <div class="block-explain safe-secure">
+            <div class="explain-head">SAFE &amp; SECURE</div>
+            <div class="explain-sub-head"> We strictly monitor all profiles &amp; you can block anyone you don't want to talk to.</div>
+          </div>
+          <div class="block-explain it-quick">
+            <div class="explain-head">IT'S QUICK!</div>
+            <div class="explain-sub-head">Sign up and find matches within minutes.</div>
+          </div>
         </div>
     </section>
   );

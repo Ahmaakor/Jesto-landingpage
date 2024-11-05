@@ -22,7 +22,7 @@ header {
     color: #fff;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 1000;
 }
 
 header .logo {
@@ -179,61 +179,80 @@ body.menu-open::after {
 
 .work {
     text-align: center;
-    padding: 4rem 2rem;
     background-color: #fff;
-    border-bottom: 2px solid #e5e5e5;
 }
 
-
-.work, .features, .reviews, .epic, .footer{
-    animation: fade-in auto linear;
-    animation-timeline: view(100% 0);
-}
-    
-    @keyframes fade-in{
-    from{
-        opacity: .3;
-        transform: scale(.5);
-    }
-    to{
-        opacity: 1;
-        transform: scale(1);
-    }
-    }
-
-.work h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #ff5a5f;
-}
-
-.work-cards {
+.row {
     display: flex;
-    justify-content: space-around;
-    gap: 1.5rem;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
-.card {
-    background-color: #fff;
-    border: 3px solid rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    max-width: 300px;
-    text-align: left;
+.block-explain{
+    width: 25%;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
 }
 
-.card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #ff5a5f;
+.row .block-explain.ton-of-singles {
+    background-color: #F1F8FF;
+    background-image: url(https://cdn-user-icons.flaticon.com/160887/160887702/1730841229604.svg?token=exp=1730842138~hmac=81c1d5897577d64d9ab2a518b02427cb);
+    background-repeat: no-repeat;
+    background-size: 113px;
+    background-position: bottom -14px right -12px;
 }
 
-.card p {
-    font-size: 1rem;
-    color: #555;
+.row .block-explain.it-free {
+    background-color: #FFF3E7;
+    background-image: url(https://cdn-user-icons.flaticon.com/160887/160887702/1730840680706.svg?token=exp=1730841703~hmac=808886f2c3c741600389eefbf3671fbd);
+    background-repeat: no-repeat;
+    background-size: 98px;
+    background-position: bottom 0px right -15px;
+}
+
+.row .block-explain.safe-secure {
+    background-color: #E5F7E7;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/10148/10148113.png);
+    background-repeat: no-repeat;
+    background-size: 110px;
+    background-position: bottom -10px right -12px;
+}
+
+.row .block-explain.it-quick {
+    background-color: #FEEAEA;
+    background-image: url(https://cdn-user-icons.flaticon.com/160887/160887702/1730841485842.svg?token=exp=1730842397~hmac=32a9aab5b82f3c4f14a05e5c05b1c69e);
+    background-repeat: no-repeat;
+    background-size: 97px;
+    background-position: bottom -3px right -5px;
+}
+
+
+.block-explain .explain-head {
+    color: #4A4A4A;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 14px;
+    margin-top: -11px;
+  font-family: "Public Sans", sans-serif;
+
+}
+
+.block-explain .explain-sub-head {
+    color: #4A4A4A;
+    font-family: Lato;
+    font-size: 15px;
+    letter-spacing: -0.2px;
+    line-height: 22px;
+    text-align: center;
+  font-family: "Public Sans", sans-serif;
+
 }
 
 .main-content {
@@ -241,7 +260,6 @@ body.menu-open::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 0 0;
 }
 
 .new-content {
@@ -275,7 +293,7 @@ body.menu-open::after {
 }
 
 .button-primary {
-    background-color: #fff;
+    /* background-color: #fff; */
     color: #ff5a5f;
     border: 2px solid #ff5a5f;
 }
@@ -285,48 +303,17 @@ body.menu-open::after {
     color: #fff;
 }
 
-.reviews {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-}
-
-.review-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 24px;
-    width: 300px;
-    text-align: center;
-}
-
-.review-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 16px;
-}
-
-.review-card h3 {
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.review-card p {
-    font-size: 14px;
-    color: #505965;
-    line-height: 1.5;
-}
 
 .epic {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 40px 0;
-    border-bottom: 2px solid #f7f0f0;
+    padding: 40px 0 0;
+    /* background: url(https://kayako.com/wp-content/uploads/2021/01/chat_stat@3x.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
 }
 
 .features {
@@ -513,13 +500,6 @@ footer {
         padding: 0.5rem 1.5rem;
         font-size: 1rem;
     }
-    .work h2, .card h3 {
-        font-size: 1.5rem;
-    }
-    .work-cards {
-        flex-direction: column;
-        align-items: center;
-    }
     .review-card, .card {
         max-width: 100%;
         margin-bottom: 1.5rem;
@@ -571,21 +551,15 @@ footer {
 
 
 @media (max-width: 768px) {
-    .work {
-        padding: 3rem 1.5rem;
-    }
+    
 
     .feature-container, .why-choose-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .work h2, .container h2, h2 .highlight {
-        font-size: 1.5rem;
-    }
-
-    .card h3, .review-card h3, .new-content h1 {
-        font-size: 1.25rem;
+    .new-content h1 {
+        font-size: 2rem;
     }
 
     .new-content p, .review-card p {
@@ -595,6 +569,9 @@ footer {
     .why-choose-text {
         max-width: 90%;
         text-align: center;
+    }
+    .row .block-explain{
+        width: 50%;
     }
 }
 
@@ -606,3 +583,9 @@ footer {
         max-width: 100%;
     }
 } 
+
+
+
+
+
+
