@@ -1,13 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-}
-
 body {
-    background-color: #fff;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
     background-color: #ff5a5f;
     color: #fff;
     position: sticky;
@@ -148,7 +139,7 @@ body.menu-open::after {
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: #fff;
 }
@@ -233,7 +224,6 @@ body.menu-open::after {
 
 .block-explain .explain-head {
     color: #4A4A4A;
-    font-family: Lato;
     font-size: 20px;
     font-weight: bold;
     letter-spacing: -0.2px;
@@ -241,18 +231,15 @@ body.menu-open::after {
     text-align: center;
     margin-bottom: 14px;
     margin-top: -11px;
-  font-family: "Public Sans", sans-serif;
 
 }
 
 .block-explain .explain-sub-head {
     color: #4A4A4A;
-    font-family: Lato;
     font-size: 15px;
     letter-spacing: -0.2px;
     line-height: 22px;
     text-align: center;
-  font-family: "Public Sans", sans-serif;
 
 }
 
@@ -294,7 +281,6 @@ body.menu-open::after {
 }
 
 .button-primary {
-    /* background-color: #fff; */
     color: #ff5a5f;
     border: 2px solid #ff5a5f;
 }
@@ -311,10 +297,6 @@ body.menu-open::after {
     flex-direction: column;
     justify-content: center;
     padding: 40px 0 0;
-    /* background: url(https://kayako.com/wp-content/uploads/2021/01/chat_stat@3x.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
 }
 
 .features {
@@ -480,7 +462,7 @@ footer {
 @media (max-width: 767px) {
     header {
         flex-direction: column;
-        padding: 1rem;
+        padding: 0rem 1rem;
         text-align: center;
     }
     header nav ul {

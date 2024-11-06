@@ -1,198 +1,62 @@
-:root {
-    --pink: #ff5a5f;
-    --pinklight: #ff9d9d;
-    --pinklighter: #ffc2c2;
-    --blue: #010a43;
-}
-
-.review-section{
+.review-section {
     background: #ffc2c240;
-    padding: 20px 0 50px;
+    padding: 20px;
+    text-align: center;
 }
 
-.review-section h1{
+.review-section h1 {
     color: var(--pink);
     font-size: 35.2px;
 }
 
-.carousel {
-    max-width: 1100px;
-    width: 90%;
-    overflow: hidden;
-    position: relative;
-    border: 2px solid var(--pink);
-    border-radius: 10px;
-    transition: height 2s ease-in-out;
-    height: auto;
-    margin: 10px auto ;
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 20px auto;
 }
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-}
-.review {
-    background-image: url('../../Jesto Images/Shockwave2015.jpeg'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+.review-card {
     padding: 20px;
     border-radius: 10px;
-    margin: 10px;
-    flex: 0 0 300px; 
-    color: white;
+    color: #000;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    box-shadow: 0 4px 8px #00000060;
 }
 
-.review:nth-child(1){
-    background-image: url('../../Jesto Images/Apple2012.jpeg'); 
-}
-.review:nth-child(2){
-    background-image: url('../../Jesto Images/Cold2022.jpeg'); 
-}
-.review:nth-child(3){
-    background-image: url('../../Jesto Images/Darkshell2012.jpeg'); 
-}
-.review:nth-child(4){
-    background-image: url('../../Jesto Images/Galactic2016.jpeg'); 
-}
-.review:nth-child(5){
-    background-image: url('../../Jesto Images/Glass20-2022.jpeg'); 
-}
-.review:nth-child(6){
-    background-image: url('../../Jesto Images/Inflated2009.jpeg'); 
-}
-.review:nth-child(7){
-    background-image: url('../../Jesto Images/Mandrillian2021.jpeg'); 
-}
-.review:nth-child(8){
-    background-image: url('../../Jesto Images/Mistnova2020.jpeg'); 
-}
-.review:nth-child(9){
-    background-image: url('../../Jesto Images/Oceanic2021.jpeg'); 
-}
-.review:nth-child(10){
-    background-image: url('../../Jesto Images/Redillium2028.jpeg'); 
-}
-
-.review p {
+.review-card p {
     font-size: 1rem;
     margin: 0;
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
 }
 
-.review span {
+.review-card span {
     color: var(--pink);
-    margin: 10px auto 0;
+    margin-top: 10px;
     text-align: center;
     font-style: italic;
     font-weight: bold;
     text-shadow: 1px 4px 4px #00000050;
-    backdrop-filter: blur(10px);
-}   
-
-.nav-button {
-    position: absolute;
-    top: 100px;
-    transform: translateY(-50%);
-    background-color: var(--pink);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    z-index: 10;
 }
 
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.testimonial-button {
-    position: absolute;
-    top: 10px; 
-    right: 10px; 
-    background-color: var(--pink);
-    color: white;
-    border: none;
-    height: 40px;
-    width: 40px;
-    border-radius: 0 10px;
-    cursor: pointer;
-    z-index: 10;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.testimonial-button span{
-    font-weight: bold; 
-}
-
-#my-testimony {
-    margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#my-testimony h3 {
-    margin: 0 0 10px;
-}
-
-#my-testimony input, #my-testimony textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid var(--pink);
-    border-radius: 5px;
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .carousel {
-        width: 90%;
-    }
-
-    .review-section h1{
-        font-size: 30px;
+@media (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 768px) {
-    .review-section h1{
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .review-section h1 {
         font-size: 26px;
     }
-    .carousel {
-        margin: 20px auto;
-        border-width: 1px; 
-        width: 90%;
-    }
-
-    .nav-button {
-        padding: 8px; 
-    }
-
-    .testimonial-button {
-        top: 10px; 
-        right: 5px;
-        width: 40px; 
-        height: 40px; 
-        font-size: 1.5rem; 
-    }
-
-    #my-testimony {
-        margin-top: 10px; 
-        padding: 15px; 
-    }
 }
-

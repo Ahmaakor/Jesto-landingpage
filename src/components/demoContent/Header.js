@@ -14,12 +14,6 @@ function Header() {
       body.classList.toggle("menu-open");
     };
 
-    // const closeMenu = () => {
-    //   hamburger.classList.remove("active");
-    //   nav.classList.remove("active");
-    //   body.classList.remove("menu-open");
-    // };
-
     hamburger.addEventListener("click", toggleMenu);
 
     return () => {

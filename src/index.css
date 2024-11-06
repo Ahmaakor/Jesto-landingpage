@@ -1,9 +1,19 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
   margin: 0;
   padding: 0;
-  font-family: "Public Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* border: 2px solid red; */
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
+:root {
+  --pink: #ff2e63;
+  --pinklight: #ff9d9d;
+  --pinklighter: #ffc2c2;
+  --blue: #010a43;
+  --background: #ffc2c2;
+  --container-bg: #f1f7fe;
+  --input-bg: #eeeeee;
+  --text-color: #333;
+}
