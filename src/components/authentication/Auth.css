@@ -18,7 +18,7 @@
     overflow: hidden;
     width: 768px;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 500px;
 }
 
 .container p {
@@ -235,6 +235,9 @@
         top: 0;
         width: 100%;
     }
+    .sign-up h1{
+       font-size: 1.5rem;
+    }
     .container.active .sign-up{
         transform:  translate(0, 100%);
     }
@@ -250,8 +253,7 @@
         border-radius: 0 0 100px 100px;
     }
     
-    .toggle-panel {
-    }
+    
     .toggle-left {
         transform: translate(0, 0);
         top: 0;
@@ -270,4 +272,20 @@
         transform: translate(0, 0);
     }
     
+}
+
+
+@media (max-width: 380px) {
+    .Auth{
+        height: 150vh;
+    }
+    .container.auth {
+        width: 600px;
+        max-width: 85vw;
+        min-height: 700px;
+        margin: 0px auto 0;
+    }
+.toggle-panel h1 {
+    font-size: 1.5rem;
+}
 }
