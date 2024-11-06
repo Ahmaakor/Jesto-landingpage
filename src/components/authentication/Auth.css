@@ -234,8 +234,8 @@
     }
     .container.auth {
         overflow: hidden;
-        width: 500px;
-        max-width: 80vw;
+        width: 600px;
+        max-width: 70vw;
         min-height: 650px;
         margin: 30px auto;
     }

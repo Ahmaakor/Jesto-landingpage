@@ -6,13 +6,13 @@ function Work() {
             <div class="explain-head">TONS OF SINGLES</div>
             <div class="explain-sub-head">639,302 new members per month</div>
           </div>
-          <div class="block-explain it-free">
+          <div class="block-explain it-easier">
             <div class="explain-head">IT'S EASIER </div>
             <div class="explain-sub-head">Message anyone, anytime, by ease.</div>
           </div>
           <div class="block-explain safe-secure">
-            <div class="explain-head">SAFE &amp; SECURE</div>
-            <div class="explain-sub-head"> We strictly monitor all profiles &amp; you can block anyone you don't want to talk to.</div>
+            <div class="explain-head">SAFE & SECURE</div>
+            <div class="explain-sub-head"> We strictly monitor all profiles & you can block anyone you don't want to talk to.</div>
           </div>
           <div class="block-explain it-quick">
             <div class="explain-head">IT'S QUICK!</div>

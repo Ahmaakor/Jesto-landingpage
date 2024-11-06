@@ -194,20 +194,21 @@ body.menu-open::after {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    padding: 20px;
 }
 
 .row .block-explain.ton-of-singles {
     background-color: #F1F8FF;
-    background-image: url(https://cdn-user-icons.flaticon.com/160887/160887702/1730841229604.svg?token=exp=1730842138~hmac=81c1d5897577d64d9ab2a518b02427cb);
+    background-image: url(https://cdn-icons-png.flaticon.com/128/12636/12636921.png);
     background-repeat: no-repeat;
     background-size: 113px;
     background-position: bottom -14px right -12px;
 }
 
-.row .block-explain.it-free {
+.row .block-explain.it-easier {
     background-color: #FFF3E7;
-    background-image: url(https://cdn-user-icons.flaticon.com/160887/160887702/1730840680706.svg?token=exp=1730841703~hmac=808886f2c3c741600389eefbf3671fbd);
+    background-image: url(https://cdn-icons-png.flaticon.com/128/6146/6146691.png);
     background-repeat: no-repeat;
     background-size: 98px;
     background-position: bottom 0px right -15px;
@@ -223,7 +224,7 @@ body.menu-open::after {
 
 .row .block-explain.it-quick {
     background-color: #FEEAEA;
-    background-image: url(https://cdn-user-icons.flaticon.com/160887/160887702/1730841485842.svg?token=exp=1730842397~hmac=32a9aab5b82f3c4f14a05e5c05b1c69e);
+    background-image: url(https://cdn-icons-png.flaticon.com/128/3934/3934864.png);
     background-repeat: no-repeat;
     background-size: 97px;
     background-position: bottom -3px right -5px;
