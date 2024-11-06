@@ -156,7 +156,7 @@ body.menu-open::after {
     border: 2px solid #ff5a5f;
     padding: 0.8rem 2rem;
     font-size: 1.2rem;
-    border-radius: 25px;
+    border-radius: 30px;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -164,7 +164,7 @@ body.menu-open::after {
 
 .cta-button:hover {
     background: transparent;
-    color: #ff5a5f;
+    color: #fff;
     border: 2px solid white;
 }
 
@@ -329,12 +329,12 @@ h2 .highlight {
     margin-bottom: 1rem;
 }
 .why-choose {
-    background: url('https://i.pcmag.com/imagery/articles/01825gUx8jgdSBOuDaJ0vRi-3.v1707838101.jpg');
+    background: url('https://static1.squarespace.com/static/545507d4e4b00bce94d4f0bc/t/658dbd72396d6b5ac8ebbdf9/1703787928920/Dating+blog.jpeg?format=1500w');
     background-color: #00000060;
     background-blend-mode: darken;
     background-attachment: fixed;
     color: white;
-    padding: 0 1.5rem;
+    padding: 1.5rem;
     background-size: cover; 
     background-position: center; 
 }
@@ -349,7 +349,16 @@ h2 .highlight {
 .why-choose-text {
     flex: 1;
     max-width: 50%;
-    padding: 20px;
+    padding: 30px;
+}
+.why-choose-text h2{
+    font-size: 1.2rem;
+    margin: 20px 0 0;
+}
+.why-choose-text p{
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    margin: 20px 0 0;
 }
 
 @media (max-width: 768px) {

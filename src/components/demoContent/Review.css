@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    box-shadow: 0 4px 8px #00000060;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: #ffffff;
 }
 
@@ -42,7 +42,7 @@
     text-align: center;
     font-style: italic;
     font-weight: bold;
-    text-shadow: 1px 4px 4px #00000050;
+    /* text-shadow: 1px 4px 4px #00000050; */
 }
 
 @media (max-width: 1024px) {

@@ -4,10 +4,10 @@ import './Review.css';
 const Review = () => {
     return (
         <section className="review-section">
-            <h1>Success Stories from our Users</h1>
+            <h1>Testimonials</h1>
             <section className="cards-grid">
                 <div className="review-card">
-                    <p>Our stay at the hotel was absolutely wonderful. The staff were incredibly accommodating and the amenities were top-notch. We will definitely be back!</p>
+                    <p>The staff were incredibly accommodating and the amenities were top-notch. We will definitely be back! Good luck</p>
                     <span>- John Doe</span>
                 </div>
                 <div className="review-card">
