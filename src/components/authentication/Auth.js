@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { useRef } from 'react';
 import logo from '../../Jesto Images/jesto white.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeftLong} from '@fortawesome/free-solid-svg-icons';
 import './Auth.css';    
 
 function Auth() {
@@ -16,6 +18,11 @@ function Auth() {
 
     return (
         <div className="Auth">
+            <Link to="/"  className='back'>
+                <button>
+                    <FontAwesomeIcon icon={faArrowLeftLong} /> Back
+                </button>
+            </Link>
             <div className="container auth" ref={containerRef}>
                 <div className="form-container sign-up">
                     <form>
