@@ -292,7 +292,13 @@ function SignUp() {
                             <label>Profile Images</label>
                             <div className="image-upload-container" id="imageUploadContainer">
                                 <div className="image-upload-box">
-                                    <input type="file" accept="image/*" capture="user" className="image-upload" data-index="0" />
+                                    <input 
+                                        type="file" 
+                                        accept="image/*" 
+                                        // capture="user" 
+                                        className="image-upload" 
+                                        data-index="0" 
+                                    />
                                 </div>
                             </div>
                         </div>

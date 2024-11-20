@@ -7,28 +7,28 @@ const Review = () => {
             <h1>Testimonials</h1>
             <section className="cards-grid">
                 <div className="review-card">
-                    <p>The staff were incredibly accommodating and the amenities were top-notch. We will definitely be back! Good luck</p>
-                    <span>- John Doe</span>
+                    <p>JestoBook helped me find someone who shares my quirky sense of humor. It's been an amazing journey since our first laugh together!</p>
+                    <span>- Adam W.</span>
                 </div>
                 <div className="review-card">
-                    <p>I was blown away by the stunning views and the luxurious rooms. This hotel truly offers an unparalleled experience.</p>
-                    <span>- Jane Smith</span>
+                    <p>Who knew love could start with a pun? JestoBook connected me with someone who truly gets my jokes and my heart.</p>
+                    <span>- Lucy T.</span>
                 </div>
                 <div className="review-card">
-                    <p>The exceptional service and attention to detail made our visit unforgettable. Highly recommend to anyone looking for a first-class stay.</p>
-                    <span>- Emily Johnson</span>
+                    <p>I was hesitant to join, but JestoBook turned out to be the best decision I ever made. We've been laughing together every day since!</p>
+                    <span>- Emma K.</span>
                 </div>
                 <div className="review-card">
-                    <p>Amazing experience! The ambiance is perfect and the food is exquisite. Couldn't have asked for a better stay.</p>
-                    <span>- Michael Brown</span>
+                    <p>JestoBook isn't just a dating site; it's a community of people who value humor and connection. I met my soulmate here!</p>
+                    <span>- Noah R.</span>
                 </div>
                 <div className="review-card">
-                    <p>From the moment we arrived, we felt like royalty. The staff went above and beyond to ensure our comfort.</p>
-                    <span>- Sarah Davis</span>
+                    <p>From hilarious chat prompts to creative icebreakers, JestoBook made it easy to connect with someone who understands my humor.</p>
+                    <span>- Sophia L.</span>
                 </div>
                 <div className="review-card">
-                    <p>Beautiful location, excellent service, and luxurious accommodations. This hotel is a gem!</p>
-                    <span>- David Wilson</span>
+                    <p>Thanks to JestoBook, I found someone who matches my energy and my sense of fun. We're planning our first comedy night date!</p>
+                    <span>- Liam M.</span>
                 </div>
             </section>
         </section>

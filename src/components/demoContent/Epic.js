@@ -20,7 +20,7 @@ function Epic() {
                         muted
                         playsInline
                         controls
-                        poster="https://jesto-landingpage.vercel.app/static/media/jesto%20white.c4f23a6d7085714bbcd3.png"
+                        // poster="https://jesto-landingpage.vercel.app/static/media/jesto%20white.c4f23a6d7085714bbcd3.png"
                         className="video-iframe"
                     >
 

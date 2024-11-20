@@ -298,6 +298,9 @@ body.menu-open::after {
     justify-content: center;
     padding: 40px 0 ;
 }
+.epic h1{
+    font-size: 1.5rem;
+}
 
 .video {
     position: relative;
