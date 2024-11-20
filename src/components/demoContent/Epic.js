@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';    
-import { useRef, useState } from 'react';
+import { Link } from 'react-router-dom'; 
 
 function Epic() {
 
@@ -17,11 +16,14 @@ function Epic() {
                 <div className="video">
                     <video 
                         loop
+                        autoPlay
+                        muted
                         playsInline
                         controls
                         poster="https://jesto-landingpage.vercel.app/static/media/jesto%20white.c4f23a6d7085714bbcd3.png"
                         className="video-iframe"
                     >
+
                         <source src="/videos/video.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>

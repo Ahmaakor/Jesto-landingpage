@@ -4,23 +4,26 @@
     background-size: cover;
     background-position: center;
     display: grid;
-    align-items: start;
-    justify-content: center;
-    /* gap: 20px; */
+    gap: 20px;
+    align-items: center;
     height: 100vh;  
+    justify-content: center;
     overflow: auto;
 }
-.Auth .back{
+
+.Auth .back {
+    position: absolute; 
     top: 20px;
     left: 20px;
-    z-index: 100;
-    margin: 40px 0 20px;
+    z-index: 100; 
     width: fit-content;
     background-color: var(--container-bg);
     color: var(--blue);
     padding: 5px 10px;
     border-radius: 5px;
+    margin: 0; 
 }
+
 
 .Auth .back button{
     all: unset;
@@ -230,6 +233,12 @@
 
 
 @media (max-width: 768px) {
+    .Auth .back {
+        position: relative;
+        margin: 40px 0 0px; 
+        top: auto;
+        left: auto;
+    }
     .container.auth {
         overflow: hidden;
         width: 600px;
@@ -248,6 +257,9 @@
     }
     .container.active .sign-in{
         transform:  translate(0, 100%);
+    }
+    .container form {
+        padding: 0 30px;
     }
     .sign-up{
         top: 0;

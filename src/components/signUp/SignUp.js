@@ -194,11 +194,11 @@ function SignUp() {
                         const img = document.createElement('img');
                         img.src = event.target.result;
                         const uploadBox = e.target.closest('.image-upload-box');
-                        uploadBox.innerHTML = '';
+                        uploadBox.innerHTML = '<input type="file" accept="image/*" class="image-upload" data-index="${imageUploadContainer.children.length}">';
                         uploadBox.appendChild(img);
                         uploadBox.classList.add('has-image');
 
-                        // Check the number of images displayed
+                        
                         const imageCount = imageUploadContainer.querySelectorAll('.has-image').length;
                         if (imageCount < 10 && imageUploadContainer.children.length < 10) {
                             const newUploadBox = document.createElement('div');
@@ -212,7 +212,7 @@ function SignUp() {
             }
         };
 
-        // Form submission handler
+        // Form submission
         const handleFormSubmit = (e) => {
             e.preventDefault();
             const formData = new FormData(form);
@@ -229,13 +229,13 @@ function SignUp() {
             alert('Form submitted successfully!');
         };
 
-        // Add event listeners
+        
         genderButtons.addEventListener('click', (e) => handleButtonClick(e, genderButtons));
         showMeButtons.addEventListener('click', (e) => handleButtonClick(e, showMeButtons));
         imageUploadContainer.addEventListener('change', handleImageChange);
         form.addEventListener('submit', handleFormSubmit);
 
-        // Clean up listeners on component unmount
+        
         return () => {
             genderButtons.removeEventListener('click', (e) => handleButtonClick(e, genderButtons));
             showMeButtons.removeEventListener('click', (e) => handleButtonClick(e, showMeButtons));
@@ -250,10 +250,14 @@ function SignUp() {
             <form id="createAccountForm">
                 <div className="form-detail">
                     <div className="left-column">
-                        {/* Input fields */}
+                        
                         <div className="form-group">
                             <label htmlFor="firstName">First Name</label>
                             <input type="text" id="firstName" name="firstName" required />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required />
                         </div>
                         <div className="form-group">
                             <label>Birthday</label>
@@ -288,7 +292,7 @@ function SignUp() {
                             <label>Profile Images</label>
                             <div className="image-upload-container" id="imageUploadContainer">
                                 <div className="image-upload-box">
-                                    <input type="file" accept="image/*" className="image-upload" data-index="0" />
+                                    <input type="file" accept="image/*" capture="user" className="image-upload" data-index="0" />
                                 </div>
                             </div>
                         </div>
