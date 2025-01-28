@@ -343,19 +343,30 @@ h2 .highlight {
 }
 
 .feature-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
 }
 .feature {
-    flex: 1;
-    margin: 1rem;
-    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* max-width: 200px; */
 }
+
 .feature i {
     font-size: 2rem;
     color: #ff5a5f;
     margin-bottom: 1rem;
+}
+.feature h5{
+    margin: 0;
+    padding: 0;
+}
+.feature p{
+    margin: 0;
+    padding: 0;
 }
 .why-choose {
     background: url('https://static1.squarespace.com/static/545507d4e4b00bce94d4f0bc/t/658dbd72396d6b5ac8ebbdf9/1703787928920/Dating+blog.jpeg?format=1500w');
@@ -633,12 +644,20 @@ footer .container{
     }
 }
 
+@media (max-width: 1024px) {
+    .feature-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media (max-width: 768px) {
     
 
-    .feature-container, .why-choose-content {
-        flex-direction: column;
+    .feature-container{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .why-choose-content {
         align-items: center;
     }
 
@@ -669,7 +688,6 @@ footer .container{
         font-size: 24px;
     }
 }
-
 
 
 @media (max-width: 480px) {
