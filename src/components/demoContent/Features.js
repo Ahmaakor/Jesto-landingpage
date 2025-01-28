@@ -9,22 +9,32 @@ function Features() {
                 <div className="feature-container">
                     <div className="feature">
                         <FontAwesomeIcon icon={faUsers} size="2x" color="#ff5a5f" />
-                        <h4>1000+ Men and Women</h4>
+                        <h4>Serious Relationships Leading to Marriage</h4>
                         <p>All of our members are one hundred percent verified. All members must qualify.</p>
                     </div>
                     <div className="feature">
                         <FontAwesomeIcon icon={faBusinessTime} size="2x" color="#ff5a5f" />
-                        <h4>11+ Years of Business</h4>
+                        <h4>Freinds and Dating Relationships</h4>
                         <p>All of our members are one hundred percent verified. All members must qualify.</p>
                     </div>
                     <div className="feature">
                         <FontAwesomeIcon icon={faChartLine} size="2x" color="#ff5a5f" />
-                        <h4>1000+ Success Story</h4>
+                        <h4>Contract Marriages</h4>
                         <p>All of our members are one hundred percent verified. All members must qualify.</p>
                     </div>
                     <div className="feature">
                         <FontAwesomeIcon icon={faVideo} size="2x" color="#ff5a5f" />
-                        <h4>Live Video Chat</h4>
+                        <h4>A Day Hookups for Fun</h4>
+                        <p>All of our members are one hundred percent verified. All members must qualify.</p>
+                    </div>
+                    <div className="feature">
+                        <FontAwesomeIcon icon={faVideo} size="2x" color="#ff5a5f" />
+                        <h4>Surrogacy Agreements</h4>
+                        <p>All of our members are one hundred percent verified. All members must qualify.</p>
+                    </div>
+                    <div className="feature">
+                        <FontAwesomeIcon icon={faVideo} size="2x" color="#ff5a5f" />
+                        <h4>Transfer Window for Bidding on ladies</h4>
                         <p>All of our members are one hundred percent verified. All members must qualify.</p>
                     </div>
                 </div>
